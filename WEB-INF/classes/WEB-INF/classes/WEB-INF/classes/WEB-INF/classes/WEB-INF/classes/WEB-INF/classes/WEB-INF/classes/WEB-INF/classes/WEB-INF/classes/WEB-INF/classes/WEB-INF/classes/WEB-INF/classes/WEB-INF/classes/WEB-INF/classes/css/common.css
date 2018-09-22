@@ -1,0 +1,117 @@
+    .row {
+        margin: 0;
+    }
+
+    .leftMenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background: #9095ab;
+        z-index: 999;
+    }
+
+    .rightMenu {
+        background: #b0adad;
+        float: left;
+        min-width: 100%;
+        min-height: 1048px;
+        padding-left: 200px;
+        position: relative;
+    }
+
+    .menu-item {
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color: #463e43;
+        cursor: pointer;
+    }
+
+    .menu-item-active {
+        background: #3d4e60;
+        color: white;
+        border-right: 4px solid #647f9d;
+    }
+
+    #header {
+        width: 120px;
+        height: 120px;
+    }
+
+    .headerImg {
+        text-align: center;
+    }
+
+    .panel {
+        margin-top: 20px;
+        padding: 0 12px;
+        background: #647f9d;
+        border: 0px;
+    }
+
+    .gl {
+        width: 100%;
+        height: 40px;
+        background: #7e91a5;
+        font: bold;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+    }
+
+    .tableHead {
+        /* border: 1px solid black; */
+        width: 100%;
+        min-height: 70px;
+        overflow: hidden;
+        line-height: 70px;
+    }
+
+    .row.table1 {
+        padding-left: 15px;
+    }
+
+    .table1 {
+        background: #e3e8ee;
+        color: #646987;
+        font-size: 12px;
+        font-weight: bold;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .table2 {
+        background: white;
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        margin: 3px 10px;
+    }
+
+    .ui-pagination-container {
+        position: absolute;
+        bottom: 50px;
+        left: calc(50% - 145px);
+    }
+
+    #artitle_type {
+        display: inline-block;
+        width: 150px;
+    }
+    .row-center{
+        margin: 10px auto;
+        text-align: center;
+    }
+    .row-margin-top{
+        margin-top: 10px;
+    }
+    .row-margin-top-padding{
+         margin-top: 10px;
+         padding:0 15px;
+    }
+    .check-inline-vertical-middle{
+        vertical-align: text-top;
+    }
