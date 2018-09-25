@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+header,
+nav,
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    height: 65px;
+    margin-top: 10px;
+    background: url(../images/logo.png) center left no-repeat;
+}
+
+.weather {
+    float: right;
+    height: 100%;
+    overflow: hidden;
+}
+
+.weather a {
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    cursor: pointer;
+}
+
+.we {
+    width: 130px;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+
+}
+
+.weLeft {
+    float: left;
+    width: 65px;
+    height: 100%;
+}
+
+.weLeft img {
+    width: 100%;
+    height: 100%;
+}
+
+.weRight {
+    float: left;
+    width: 65px;
+    height: 100%;
+    font-size: 14px;
+}
+
+.weRight .weDate {
+    color: black;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 6px;
+}
+
+.weRight .weDetail {
+    height: 50px;
+}
+
+header,
+nav {
+    width: 1400px;
+}
+
+nav {
+    margin: 8px auto;
+    height: 50px;
+    background: black;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    float: left;
+    margin-left: 22px;
+    height: 100%;
+}
+
+nav ul li {
+    float: left;
+    padding: 0 8px;
+    line-height: 50px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav form {
+    float: right;
+    margin-right: 50px;
+    margin-top: 11px;
+}
+
+.foo {
+    height: 28px;
+    float: left;
+    background: white;
+    border-radius: 3px;
+}
+
+#search {
+    height: 28px;
+    width: 199px;
+    padding: 0px 8px;
+    float: left;
+    border: 0;
+    border-radius: 3px;
+
+}
+
+#btn_search {
+    margin-left: 16px;
+    width: 60px;
+    height: 28px;
+    border: 0;
+    border-radius: 3px;
+}
+
+#btn_search:hover {
+    background: lightblue;
+    cursor: pointer;
+}
+
+.main {
+    width: 1400px;
+    overflow: hidden;
+    /* border: 1px solid gainsboro; */
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.blogs {
+    float: left;
+    width: 900px;
+    border: 1px solid #E5E5E5;
+    padding: 0 28px 30px 28px;
+    background: #FDFDFD;
+}
+
+.ht {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.ht span {}
+
+.bul li {
+    border-bottom: 1px dashed black;
+    margin: 40px 0 8px 0;
+}
+
+.introduction {
+    margin: 20px 0 15px 0;
+
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.timestamp {
+    text-align: right;
+    margin-top: 14px;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.sec2 {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 1400px;
+    height: 30px;
+    font-size: 12px;
+    margin: 80px auto 25px auto;
+}
+
+footer p:first-child {
+    float: left;
+}
+
+footer p:last-child {
+    float: left;
+    margin-left: 552px;
+}
+
+.pg {
+    height: 28px;
+    border: 1px solid #e5e5e5;
+    float: left;
+    border-radius: 3px;
+
+}
+
+.page2 {
+    list-style: none;
+    font-size: 12px;
+}
+
+.page2 li {
+    float: left;
+    padding: 0px 10px;
+    height: 28px;
+    border-right: 1px solid #e5e5e5;
+}
+
+.page2 li:not(.currentPage):not(.prePage):hover {
+    background: #E5E5E5;
+}
+
+.page2 li a {
+    color: #337ab7;
+    line-height: 28px;
+}
+
+.pg .prePage a {
+    color: gray;
+}
+
+.pg .page2 li.prePage:hover {
+    cursor: not-allowed;
+}
+
+.page2 .currentPage,
+.page2 .currentPage a {
+    background: #337ab7;
+    color: white;
+}
+
+/*右侧信息*/
+
+aside {
+    width: 300px;
+    /* border: 1px solid #e5e5e5; */
+    float: right;
+    min-height: 600px;
+
+}
+
+.erweima,
+.personInfo,
+.logByTypes,
+.logByTime,
+.friendLink {
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #E5E5E5;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    background: #FDFDFD;
+}
+
+.personInfo,
+.logByTypes,
+.logByTime,
+.friendLink {
+    margin-top: 60px;
+}
+
+.qTitle {
+    width: 100%;
+    min-height: 50px;
+    border-bottom: 1px solid #E5E5E5;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.qImg {
+    width: 100%;
+    height: 300;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.qImg img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.personInfo img {
+    width: 200px;
+    height: 300px;
+}
+
+.personInfo p {
+    text-align: center;
+}
+
+aside a {
+    color: #337ab7;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+aside ul {
+    margin: auto 23px;
+}
+
+aside li {
+    margin: 10px 0;
+}
+
+aside span {
+    margin-left: 23px;
+}
+
+.erweima .qTitle {
+    background: url(../images/weixing_icon.png) center left no-repeat;
+}
+
+.personInfo .qTitle {
+    background: url(../images/user_icon.png) center left no-repeat;
+}
+
+.logByTypes .qTitle {
+    background: url(../images/byDate_icon.png) center left no-repeat;
+}
+
+.logByTime .qTitle {
+    background: url(../images/byDate_icon.png) center left no-repeat;
+}
+
+.friendLink .qTitle {
+    background: url(../images/link_icon.png) center left no-repeat;
+}
+
+.nearPage {
+    font-size: 14px;
+    border-top: 1px dashed black;
+}
+
+.nearPage .prevPage {
+    margin: 10px 0 12px 0;
+}
+
+.keywords {
+    color: black;
+}
+
+.keywords span:first-of-type {
+    font-weight: 600;
+}
+
+.keywords a {
+    font-style: italic;
+}
+
+.comment {
+    width: 900px;
+    float: left;
+    border: 1px solid #E5E5E5;
+    background: #FDFDFD;
+    padding: 28px 28px 30px 28px;
+    margin-top: 30px;
+    min-height: 400px;
+}
+.comwrapper{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.for_textarea {
+    position: absolute;
+    top: 37px;
+    border: 1px solid red;
+    border-top: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: 0;
+    outline: none;
+}
+
+.loginblock {
+    position: absolute;
+    left: 3.4px;
+    width: 38px;
+    height: 38px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    font-size: 12px;
+    color: red;
+}
+
+.border-t {
+    width: 896px;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    top:28px;
+    left: 2px;
+}
+#submit{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background: url(../images/post-btn.png) no-repeat;
+    position: absolute;
+    top: 170px;
+    right: 0;
+    outline: none;
+    cursor: pointer;
+}
+#submit:hover{
+
+}
+.comments{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 12px;
+}
+.nocomment{
+    text-align: center;
+    background: #e6e6e6;
+}
+p.ads{
+    margin-top: 20px;
+    text-align: right;
+    color:#8f8f8f;
+}
+

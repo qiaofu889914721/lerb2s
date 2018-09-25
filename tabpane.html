@@ -143,6 +143,8 @@
                             <!-- 加载编辑器的容器 -->
                             <script id="container" name="content" type="text/plain">
 
+
+
                             </script>
                         </div>
 
@@ -233,7 +235,6 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.shCircleLoader-min.js"></script>
-    <script src="js/common.js"></script>
     <script src="js/jquery.pagination.min.js"></script>
     <!-- 配置文件 -->
     <script type="text/javascript" src="ueditor/ueditor.config.js"></script>
@@ -245,9 +246,16 @@
     <!-- 实例化编辑器 -->
     <script type="text/javascript">
         var ue = UE.getEditor('container', {
-            initialFrameHeight: 500
+            initialFrameHeight: 500,
+            autoHeightEnabled:false
         });
-    </script>
+        // ue.ready(function(){
+        //     ue.setContent('hello');
+        //     //获取html内容，返回: <p>hello</p>
+        //     var artitle_content = ue.getContent();
+        // });
+</script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>

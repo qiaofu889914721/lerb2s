@@ -1,4 +1,6 @@
 $(function () {
+    //jq初始化隐藏提交弹窗
+    $(".alert").hide();
     $(".menu-item").click(function (e) {
         $(".menu-item").removeClass("menu-item-active");
         $(this).addClass("menu-item-active");
@@ -6,6 +8,39 @@ $(function () {
 
     $("#submit").click(function () {
         loginingProcess();
+        var artitle_title=$("#artitle_title").val();
+        var artitle_tag = $("#artitle_tag").val();
+        var artitle_type = $("#artitle_type").val();
+        var artitle_content;
+        //对编辑器的操作最好在编辑器ready之后再做
+        ue.ready(function () {
+            //设置编辑器的内容
+            //ue.setContent('hello');
+            //获取html内容，返回: <p>hello</p>
+            artitle_content= ue.getContent();
+            //获取纯文本内容，返回: hello
+            //var txt = ue.getContentTxt();
+        });
+        var params={"title":artitle_title,"tag":artitle_tag,"type":artitle_type,"content":artitle_content};
+
+        $.ajax({
+            type: "post",
+            url: "/publishBlog.do",
+            data: params,
+            contentType: "application/x-www-form-urlencoded;charset=utf-8",
+            success: function (response) {
+                if(parseInt(response)>=1){
+                    removeLoginingProcess();
+                    $("#artitle_title").val("");
+                    $("#artitle_tag").val("");
+                    ue.setContent = "";
+                    $(".alert").show();
+                    setTimeout(() => {
+                        $(".alert").hide();
+                    }, 3000);
+                }
+            }
+        });
     });
 });
 
