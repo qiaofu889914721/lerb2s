@@ -58,7 +58,7 @@
 <nav>
     <ul>
         <li>
-            <a href="">最新电影</a>
+            <a href="http://localhost:8080/index.html">首页</a>
         </li>
         <li>
             <a href="">最新电影</a>

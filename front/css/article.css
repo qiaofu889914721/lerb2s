@@ -427,11 +427,11 @@ textarea {
 }
 
 .border-t {
-    width: 896px;
+    width: 837px;
     height: 20px;
     overflow: hidden;
     position: absolute;
-    top:28px;
+    top:30px;
     left: 2px;
 }
 #submit{

@@ -33,7 +33,7 @@ $(function () {
                     removeLoginingProcess();
                     $("#artitle_title").val("");
                     $("#artitle_tag").val("");
-                    ue.setContent = "";
+                    ue.setContent('');
                     $(".alert").show();
                     setTimeout(() => {
                         $(".alert").hide();
